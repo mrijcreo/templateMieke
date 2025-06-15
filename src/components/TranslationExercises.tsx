@@ -43,7 +43,7 @@ export default function TranslationExercises() {
   ]
 
   const topics = [
-    'algemeen', 'reizen', 'eten', 'werk', 'familie', 'hobby\'s', 'school', 'winkelen', 'gezondheid', 'weer'
+    'algemeen', 'reizen', 'eten', 'werk', 'familie', 'hobby\'s', 'school', 'winkelen', 'gezondheid', 'weer', 'HR'
   ]
 
   const difficultyLabels = {
@@ -81,6 +81,20 @@ Geef een zin in het ${selectedLanguages.source} en 4 mogelijke vertalingen in he
 ` : `
 Geef een korte dialoog situatie in het ${selectedLanguages.source} en vraag om een passend antwoord in het ${selectedLanguages.target}.
 `}
+
+${selectedTopic === 'HR' ? `
+Focus op HR-gerelateerde onderwerpen zoals:
+- Sollicitatiegesprekken
+- Personeelsbeleid
+- Arbeidsvoorwaarden
+- Performance reviews
+- Teambuilding
+- Recruitment
+- Onboarding
+- Feedback gesprekken
+- Verlof en ziekteverzuim
+- Diversiteit en inclusie
+` : ''}
 
 Antwoord in dit exacte JSON formaat:
 {
